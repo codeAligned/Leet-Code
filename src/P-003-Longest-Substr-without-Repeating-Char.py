@@ -1,3 +1,14 @@
+'''
+P-003 - Longest Substring Without Repeating Characters
+
+Given a string, find the length of the longest substring without repeating
+characters. For example, the longest substring without repeating letters for
+"abcabcbb" is "abc", which the length is 3. For "bbbbb" the longest substring
+is "b", with the length of 1.
+
+Tags: Hash Table, Two Pointers, String
+'''
+
 class Solution:
 	# @return an integer
 	def lengthOfLongestSubstring(self, s):
@@ -10,8 +21,13 @@ class Solution:
 			l = max(l, i - t + 1)
 		return l
 
-s = Solution()
-print s.lengthOfLongestSubstring('abcabcbb')
-print s.lengthOfLongestSubstring('c')
-print s.lengthOfLongestSubstring('cc')
-print s.lengthOfLongestSubstring('abcde')
+from utils import *
+
+cases = [
+	Test_case(('abcabcbb',), 3),
+	Test_case(('c', ), 1),
+	Test_case(('cc', ), 1),
+	Test_case(('abcde', ), 5),
+]
+
+run_cases(Solution().lengthOfLongestSubstring, cases)

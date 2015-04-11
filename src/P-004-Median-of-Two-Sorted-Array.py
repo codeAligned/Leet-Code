@@ -1,3 +1,13 @@
+'''
+P-004 - Median of Two Sorted Arrays
+
+There are two sorted arrays A and B of size m and n respectively. Find the
+median of the two sorted arrays.
+The overall run time complexity should be O(log (m+n)).
+
+Tags: Divide and Conquer, Array, Binary Search
+'''
+
 class Solution:
     # @return a float
     def findMedianSortedArrays(self, A, B):
@@ -5,7 +15,7 @@ class Solution:
 
         # A is always the shorter array
         if m > n:
-            return findMedianSortedArrays(B, A)
+            return self.findMedianSortedArrays(B, A)
 
         # Binary Search
         imin, imax = 0, m
@@ -38,8 +48,15 @@ class Solution:
 
                 return (num1 + num2) / 2.0
 
-s = Solution()
+from utils import *
 
-l1 = [2]
-l2 = [1, 3, 4]
-print s.findMedianSortedArrays(l1, l2)
+cases = [
+    Test_case(([2], [1, 3, 4]), 2.5),
+    Test_case(([2], [4]), 3),
+    Test_case(([2], [3, 4]), 3),
+    Test_case(([2], [1, 3, 4, 5]), 3),
+    Test_case(([2], []), 2),
+    Test_case(([2, 4], []), 3),
+]
+
+run_cases(Solution().findMedianSortedArrays, cases)
