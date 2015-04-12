@@ -1,3 +1,15 @@
+'''
+P-074 - Search a 2D Matrix
+
+Write an efficient algorithm that searches for a value in anmxnmatrix.
+This matrix has the following properties: Integers in each row are
+sorted from left to right.The first integer of each row is greater
+than the last integer of the previous row. For example, Consider the
+following matrix: Giventarget=3, returntrue.
+
+Tags: Array, Binary Search
+'''
+
 class Solution:
     # @param matrix, a list of lists of integers
     # @param target, an integer

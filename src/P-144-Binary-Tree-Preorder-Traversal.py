@@ -1,3 +1,14 @@
+'''
+P-144 - Binary Tree Preorder Traversal
+
+Given a binary tree, return thepreordertraversal of its nodes' values.
+For example:Given binary tree{1,#,2,3},1      \       2      /     3
+return[1,2,3]. Note:Recursive solution is trivial, could you do it
+iteratively?
+
+Tags: Tree, Stack
+'''
+
 # Definition for a  binary tree node
 # class TreeNode:
 #     def __init__(self, x):

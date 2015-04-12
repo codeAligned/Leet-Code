@@ -1,3 +1,13 @@
+'''
+P-061 - Rotate List
+
+Given a list, rotate the list to the right bykplaces, wherekis non-
+negative. For
+example:Given1->2->3->4->5->NULLandk=2,return4->5->1->2->3->NULL.
+
+Tags: Linked List, Two Pointers
+'''
+
 # Definition for singly-linked list.
 # class ListNode:
 #     def __init__(self, x):

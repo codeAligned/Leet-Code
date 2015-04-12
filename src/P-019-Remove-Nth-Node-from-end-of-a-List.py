@@ -1,3 +1,13 @@
+'''
+P-019 - Remove Nth Node From End of List
+
+Given a linked list, remove thenthnode from the end of list and return
+its head. For example, Note:Givennwill always be valid.Try to do this
+in one pass.
+
+Tags: Linked List, Two Pointers
+'''
+
 # Definition for singly-linked list.
 class ListNode:
     def __init__(self, x):

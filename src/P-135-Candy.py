@@ -1,3 +1,13 @@
+'''
+P-135 - Candy
+
+There areNchildren standing in a line. Each child is assigned a rating
+value. You are giving candies to these children subjected to the
+following requirements: What is the minimum candies you must give?
+
+Tags: Greedy
+'''
+
 class Solution:
     # @param ratings, a list of integer
     # @return an integer

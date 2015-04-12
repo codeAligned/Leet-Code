@@ -1,3 +1,13 @@
+'''
+P-131 - Palindrome Partitioning
+
+Given a strings, partitionssuch that every substring of the partition
+is a palindrome. Return all possible palindrome partitioning ofs. For
+example, givens="aab",Return[      ["aa","b"],      ["a","a","b"]    ]
+
+Tags: Backtracking
+'''
+
 class Solution:
     # @param s, a string
     # @return a list of lists of string

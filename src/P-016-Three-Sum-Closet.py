@@ -1,3 +1,14 @@
+'''
+P-016 - 3Sum Closest
+
+Given an array S of n integers, find three integers in S such that the sum
+is closest to a given number, target. Return the sum of the three
+integers. You may assume that each input would have exactly one
+solution.
+
+Tags: Array, Two Pointers
+'''
+
 class Solution:
     # @return the sum of the three integers
     # O(n ^ 2) Solution
@@ -17,5 +28,13 @@ class Solution:
                     return target
         return target - m
 
-s = Solution()
-print s.threeSumClosest([0,0,0], 1)
+# Testing
+from utils import *
+
+cases = [
+	Test_case(([0, 0, 0], 1), 0),
+    Test_case(([0, 0, 0, 1], 1), 1),
+    Test_case(([0, 0, 0, 3, -2], 1), 1),
+]
+
+run_cases(Solution().threeSumClosest, cases)

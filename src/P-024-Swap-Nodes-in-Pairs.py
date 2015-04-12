@@ -1,3 +1,14 @@
+'''
+P-024 - Swap Nodes in Pairs
+
+Given a linked list, swap every two adjacent nodes and return its
+head. For example,Given1->2->3->4, you should return the list
+as2->1->4->3. Your algorithm should use only constant space. You
+maynotmodify the values in the list, only nodes itself can be changed.
+
+Tags: Linked List
+'''
+
 # Definition for singly-linked list.
 class ListNode:
     def __init__(self, x):

@@ -1,3 +1,11 @@
+'''
+P-050 - Pow(x, n)
+
+Implement pow(x,n).
+
+Tags: Math, Binary Search
+'''
+
 class Solution:
     # @param x, a float
     # @param n, a integer

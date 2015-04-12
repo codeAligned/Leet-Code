@@ -1,3 +1,16 @@
+'''
+P-028 - Implement strStr()
+
+Implement strStr(). Returns the index of the first occurrence of
+needle in haystack, or -1 if needle is not part of haystack. Update
+(2014-11-02):The signature of the function had been updated to return
+theindexinstead of the pointer. If you still see your function
+signature returns achar *orString, please click the reload buttonto
+reset your code definition.
+
+Tags: Two Pointers, String
+'''
+
 class Solution:
     # @param haystack, a string
     # @param needle, a string

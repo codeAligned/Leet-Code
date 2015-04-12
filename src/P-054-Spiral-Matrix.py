@@ -1,3 +1,13 @@
+'''
+P-054 - Spiral Matrix
+
+Given a matrix ofmxnelements (mrows,ncolumns), return all elements of
+the matrix in spiral order. For example,Given the following matrix:
+You should return[1,2,3,6,9,8,7,4,5].
+
+Tags: Array
+'''
+
 class Solution:
     # @param matrix, a list of lists of integers
     # @return a list of integers

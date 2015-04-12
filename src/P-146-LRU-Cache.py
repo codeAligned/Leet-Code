@@ -1,3 +1,17 @@
+'''
+P-146 - LRU Cache
+
+Design and implement a data structure for Least Recently Used (LRU)
+cache. It should support the following operations:getandset. get(key)-
+Get the value (will always be positive) of the key if the key exists
+in the cache, otherwise return -1.set(key, value)- Set or insert the
+value if the key is not already present. When the cache reached its
+capacity, it should invalidate the least recently used item before
+inserting a new item.
+
+Tags: Data Structure
+'''
+
 class Cell(object):
     def __init__(self, k, v, t = -1):
         self.k = k

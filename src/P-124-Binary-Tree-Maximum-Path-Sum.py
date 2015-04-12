@@ -1,3 +1,13 @@
+'''
+P-124 - Binary Tree Maximum Path Sum
+
+Given a binary tree, find the maximum path sum. The path may start and
+end at any node in the tree. For example:Given the below binary tree,1
+/ \       2   3 Return6.
+
+Tags: Tree, Depth-first Search
+'''
+
 # Definition for a  binary tree node
 # class TreeNode:
 #     def __init__(self, x):

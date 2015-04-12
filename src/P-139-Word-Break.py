@@ -1,3 +1,14 @@
+'''
+P-139 - Word Break
+
+Given a stringsand a dictionary of wordsdict, determine ifscan be
+segmented into a space-separated sequence of one or more dictionary
+words. For example, givens="leetcode",dict=["leet", "code"]. Return
+true because"leetcode"can be segmented as"leet code".
+
+Tags: Dynamic Programming
+'''
+
 class Solution:
     # @param s, a string
     # @param dict, a set of string

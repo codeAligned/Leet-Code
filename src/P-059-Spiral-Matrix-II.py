@@ -1,3 +1,12 @@
+'''
+P-059 - Spiral Matrix II
+
+Given an integern, generate a square matrix filled with elements from
+1 ton2in spiral order. For example,Givenn=3,
+
+Tags: Array
+'''
+
 class Solution:
     # @return a list of lists of integer
     def generateMatrix(self, n):

@@ -1,23 +1,14 @@
+'''
+P-013 - Roman to Integer
+
+Given a roman numeral, convert it to an integer. Input is guaranteed
+to be within the range from 1 to 3999.
+
+Tags: Math, String
+'''
+
 class Solution:
     # @return a string
-    def intToRoman(self, num):
-        ps, ss, re = 'IXCM', 'VLD', ''
-        ns = [int(c) for c in str(num)]
-        k = len(ns)
-        for n in ns:
-            k -= 1
-            if n == 0:
-                pass
-            elif n <= 3:
-                re += ps[k] * n
-            elif n <= 5:
-                re += ps[k] * (5 - n) + ss[k]
-            elif n <= 8:
-                re += ss[k] + ps[k] * (n - 5)
-            else:
-                re += ps[k] * (10 - n) + ps[k + 1]
-        return re
-
     def romanToInt(self, s):
         num = {'I': 1, 'V': 5, 'X': 10, 'L': 50, 'C': 100, 'D': 500, 'M': 1000, }
         k, n = 0, 0
@@ -31,7 +22,16 @@ class Solution:
                 n += num[s[i]]
         return n
 
-s = Solution()
-for i in range(1, 4000):
-    if s.romanToInt(s.intToRoman(i)) != i:
-        print i, s.intToRoman(i), s.romanToInt(s.intToRoman(i))
+# Testing
+from utils import *
+
+cases = [
+	Test_case(('III', ), 3),
+	Test_case(('VIII', ), 8),
+    Test_case(('XIV', ), 14),
+    Test_case(('XVIII', ), 18),
+    Test_case(('MMXV', ), 2015),
+    Test_case(('MMCDXVII', ), 2417),
+]
+
+run_cases(Solution().romanToInt, cases)

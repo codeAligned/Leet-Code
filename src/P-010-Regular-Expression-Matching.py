@@ -1,3 +1,11 @@
+'''
+P-010 - Regular Expression Matching
+
+Implement regular expression matching with support for'.'and'*'.
+
+Tags: Dynamic Programming, Backtracking, String
+'''
+
 class Solution:
     # @return a boolean
 

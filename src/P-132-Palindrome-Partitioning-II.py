@@ -1,3 +1,14 @@
+'''
+P-132 - Palindrome Partitioning II
+
+Given a strings, partitionssuch that every substring of the partition
+is a palindrome. Return the minimum cuts needed for a palindrome
+partitioning ofs. For example, givens="aab",Return1since the
+palindrome partitioning["aa","b"]could be produced using 1 cut.
+
+Tags: Dynamic Programming
+'''
+
 class Solution:
     # @param s, a string
     # @return an integer

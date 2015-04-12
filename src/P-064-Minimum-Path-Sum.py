@@ -1,3 +1,14 @@
+'''
+P-064 - Minimum Path Sum
+
+Given amxngrid filled with non-negative numbers, find a path from top
+left to bottom right whichminimizesthe sum of all numbers along its
+path. Note:You can only move either down or right at any point in
+time.
+
+Tags: Array, Dynamic Programming
+'''
+
 class Solution:
     # @param grid, a list of lists of integers
     # @return an integer

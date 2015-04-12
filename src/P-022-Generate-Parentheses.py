@@ -1,3 +1,13 @@
+'''
+P-022 - Generate Parentheses
+
+Givennpairs of parentheses, write a function to generate all
+combinations of well-formed parentheses. For example, givenn= 3, a
+solution set is: "((()))", "(()())", "(())()", "()(())", "()()()"
+
+Tags: Backtracking, String
+'''
+
 class Solution:
     # @param an integer
     # @return a list of string

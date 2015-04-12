@@ -1,3 +1,16 @@
+'''
+P-062 - Unique Paths
+
+A robot is located at the top-left corner of amxngrid (marked 'Start'
+in the diagram below). The robot can only move either down or right at
+any point in time. The robot is trying to reach the bottom-right
+corner of the grid (marked 'Finish' in the diagram below). How many
+possible unique paths are there? Above is a 3 x 7 grid. How many
+possible unique paths are there? Note:mandnwill be at most 100.
+
+Tags: Array, Dynamic Programming
+'''
+
 class Solution:
     # @return an integer
 

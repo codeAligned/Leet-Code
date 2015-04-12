@@ -1,3 +1,19 @@
+'''
+P-160 - Intersection of Two Linked Lists
+
+Write a program to find the node at which the intersection of two
+singly linked lists begins. For example, the following two linked
+lists: begin to intersect at node c1. Notes:If the two linked lists
+have no intersection at all, returnnull.The linked lists must retain
+their original structure after the function returns.You may assume
+there are no cycles anywhere in the entire linked structure.Your code
+should preferably run in O(n) time and use only O(1) memory.
+Credits:Special thanks to@stellarifor adding this problem and creating
+all test cases.
+
+Tags: Linked List
+'''
+
 # Definition for singly-linked list.
 # class ListNode:
 #     def __init__(self, x):

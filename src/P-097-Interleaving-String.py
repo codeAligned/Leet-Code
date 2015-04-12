@@ -1,3 +1,13 @@
+'''
+P-097 - Interleaving String
+
+Givens1,s2,s3, find whethers3is formed by the interleaving ofs1ands2.
+For example,Given:s1="aabcc",s2="dbbca", Whens3="aadbbcbcac", return
+true.Whens3="aadbbbaccc", return false.
+
+Tags: Dynamic Programming, String
+'''
+
 class Solution:
     # @return a boolean
 

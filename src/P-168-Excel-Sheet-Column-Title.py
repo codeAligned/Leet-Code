@@ -1,3 +1,13 @@
+'''
+P-168 - Excel Sheet Column Title
+
+Given a positive integer, return its corresponding column title as
+appear in an Excel sheet. For example: Credits:Special thanks
+to@ifanchufor adding this problem and creating all test cases.
+
+Tags: Math
+'''
+
 class Solution:
     # @return a string
     def convertToTitle(self, num):

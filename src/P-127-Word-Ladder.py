@@ -1,3 +1,18 @@
+'''
+P-127 - Word Ladder
+
+Given two words (startandend), and a dictionary, find the length of
+shortest transformation sequence fromstarttoend, such that: For
+example,
+Given:start="hit"end="cog"dict=["hot","dot","dog","lot","log"] As one
+shortest transformation is"hit" -> "hot" -> "dot" -> "dog" ->
+"cog",return its length5. Note:Return 0 if there is no such
+transformation sequence.All words have the same length.All words
+contain only lowercase alphabetic characters.
+
+Tags: Breadth-first Search
+'''
+
 class Solution:
     # @param start, a string
     # @param end, a string

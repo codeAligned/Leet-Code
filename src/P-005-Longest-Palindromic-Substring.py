@@ -1,27 +1,36 @@
+'''
+P-005 - Longest Palindromic Substring
+
+Given a stringS, find the longest palindromic substring in S. You may
+assume that the maximum length of S is 1000, and there exists one unique
+longest palindromic substring.
+
+Tags: String
+'''
+
 class Solution:
     # @return a string
 
     # Straightforward
     # O(n ^ 2)
+    def is_palindrome(self, start, end, s):
+        for i in xrange((end - start + 1) / 2):
+            if s[start + i] != s[end - i]:
+                return False
+        return True
+
     def longestPalindrome(self, s):
-        self.s = s
         ms = ml = 0
         for k in range(len(s)):
             # Odd length
-            if self.is_palindrome(k - ml, k):
+            if self.is_palindrome(k - ml, k, s):
                 ms = k - ml
                 ml += 1
             # Even length
-            elif k - ml - 1 >= 0 and self.is_palindrome(k - ml - 1, k):
+            elif k - ml - 1 >= 0 and self.is_palindrome(k - ml - 1, k, s):
                 ms = k - ml - 1
                 ml += 2
         return s[ms : ms + ml]
-
-    def is_palindrome(self, start, end):
-        for i in xrange((end - start + 1) / 2):
-            if self.s[start + i] != self.s[end - i]:
-                return False
-        return True
 
     # Manacher's Algorithm
     # O(n) Time
@@ -39,9 +48,9 @@ class Solution:
         P = [0] * len(T)
         C, R = 0, 0
         for i in range(1, len(T) - 1):
-            i_mirror = 2 * C - i 
+            i_mirror = 2 * C - i
             P[i] = min(R - i, P[i_mirror]) if (R > i) else 0
-            
+
             while T[i + 1 + P[i]] == T[i - 1 - P[i]]:
                 P[i] += 1
 
@@ -54,12 +63,17 @@ class Solution:
 
         return s[(index - 1 - length)/2 : (index - 1 + length)/2]
 
-s = Solution()
+# Testing
+from utils import *
 
-print s.longestPalindrome('12343252311325')
-print s.longestPalindrome('')
-print s.longestPalindrome('1')
-print s.longestPalindrome('11')
-print s.longestPalindrome('131')
-print s.longestPalindrome('123215')
-print s.longestPalindrome('41441')
+cases = [
+	Test_case(('', ), ''),
+    Test_case(('1', ), '1'),
+    Test_case(('11', ), '11'),
+    Test_case(('131', ), '131'),
+    Test_case(('123215', ), '12321'),
+    Test_case(('41441', ), '1441'),
+    Test_case(('12343252311325', ), '52311325'),
+]
+
+run_cases(Solution().longestPalindrome, cases)

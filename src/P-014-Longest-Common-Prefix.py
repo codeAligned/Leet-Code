@@ -1,18 +1,14 @@
+'''
+P-014 - Longest Common Prefix
+
+Write a function to find the longest common prefix string amongst an
+array of strings.
+
+Tags: String
+'''
+
 class Solution:
     # @return a string
-    def longestCommonPrefix(self, strs):
-        if len(strs) == 0:
-            return ''
-        k = 0
-        m = len(min(strs, key=lambda x: len(x)))
-        while k < m:
-            c = strs[0][k]
-            for s in strs:
-                if s[k] != c:
-                    return strs[0][:k]
-            k += 1
-        return strs[0][:k]
-
     def longestCommonPrefix(self, strs):
         if not strs:
             return ''
@@ -21,3 +17,14 @@ class Solution:
             if len(set(letters)) > 1:
                 return strs[0][:i]
         return min(strs)
+
+# Testing
+from utils import *
+
+cases = [
+	Test_case((['abc', 'abd'],), 'ab'),
+    Test_case((['abc', 'abc'],), 'abc'),
+    Test_case((['abc', ''],), ''),
+]
+
+run_cases(Solution().longestCommonPrefix, cases)

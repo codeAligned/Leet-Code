@@ -1,3 +1,15 @@
+'''
+P-018 - 4Sum
+
+Given an array S of n integers, are there elements a,b,c, and d in S such
+that a + b + c + d = target? Find all unique quadruplets in the array which
+gives the sum of target. Note:Elements in a quadruplet (a,b,c,d) must
+be in non-descending order. The solution set must not contain
+uplicate quadruplets.
+
+Tags: Array, Hash Table, Two Pointers
+'''
+
 class Solution:
     # @return a list of lists of length 4, [[val1,val2,val3,val4]]
     # O(n^2*log(n))

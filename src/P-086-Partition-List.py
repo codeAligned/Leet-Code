@@ -1,3 +1,15 @@
+'''
+P-086 - Partition List
+
+Given a linked list and a valuex, partition it such that all nodes
+less thanxcome before nodes greater than or equal tox. You should
+preserve the original relative order of the nodes in each of the two
+partitions. For example,Given1->4->3->2->5->2andx=
+3,return1->2->2->4->3->5.
+
+Tags: Linked List, Two Pointers
+'''
+
 # Definition for singly-linked list.
 class ListNode:
     def __init__(self, x):

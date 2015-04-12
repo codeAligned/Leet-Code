@@ -1,3 +1,13 @@
+'''
+P-021 - Merge Two Sorted Lists
+
+Merge two sorted linked lists and return it as a new list. The new
+list should be made by splicing together the nodes of the first two
+lists.
+
+Tags: Linked List
+'''
+
 # Definition for singly-linked list.
 class ListNode:
      def __init__(self, x):

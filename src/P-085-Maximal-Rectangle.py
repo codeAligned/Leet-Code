@@ -1,3 +1,12 @@
+'''
+P-085 - Maximal Rectangle
+
+Given a 2D binary matrix filled with 0's and 1's, find the largest
+rectangle containing all ones and return its area.
+
+Tags: Array, Hash Table, Stack, Dynamic Programming
+'''
+
 class Solution:
     # @param matrix, a list of lists of 1 length string
     # @return an integer

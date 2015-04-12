@@ -1,3 +1,14 @@
+'''
+P-078 - Subsets
+
+Given a set of distinct integers,S, return all possible subsets.
+Note:Elements in a subset must be in non-descending order.The solution
+set must not contain duplicate subsets. For example,IfS=[1,2,3], a
+solution is:
+
+Tags: Array, Backtracking, Bit Manipulation
+'''
+
 class Solution:
     # @param S, a list of integer
     # @return a list of lists of integer

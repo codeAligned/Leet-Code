@@ -1,3 +1,16 @@
+'''
+P-071 - Simplify Path
+
+Given an absolute path for a file (Unix-style), simplify it. For
+example,path="/home/", =>"/home"path="/a/./b/../../c/", =>"/c" click
+to show corner cases. Did you consider the case wherepath="/../"?In
+this case, you should return"/".Another corner case is the path might
+contain multiple slashes'/'together, such as"/home//foo/".In this
+case, you should ignore redundant slashes and return"/home/foo".
+
+Tags: Stack, String
+'''
+
 class Solution:
     # @param path, a string
     # @return a string

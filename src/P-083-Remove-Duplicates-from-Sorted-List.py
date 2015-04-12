@@ -1,3 +1,13 @@
+'''
+P-083 - Remove Duplicates from Sorted List
+
+Given a sorted linked list, delete all duplicates such that each
+element appear onlyonce. For example,Given1->1->2,
+return1->2.Given1->1->2->3->3, return1->2->3.
+
+Tags: Linked List
+'''
+
 # Definition for singly-linked list.
 class ListNode:
     def __init__(self, x):

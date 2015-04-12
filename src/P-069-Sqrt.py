@@ -1,3 +1,11 @@
+'''
+P-069 - Sqrt(x)
+
+Implementint sqrt(int x). Compute and return the square root ofx.
+
+Tags: Math, Binary Search
+'''
+
 class Solution:
     # @param x, an integer
     # @return an integer

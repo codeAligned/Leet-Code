@@ -1,3 +1,17 @@
+'''
+P-099 - Recover Binary Search Tree
+
+Two elements of a binary search tree (BST) are swapped by mistake.
+Recover the tree without changing its structure. confused
+what"{1,#,2,3}"means?> read more on how binary tree is serialized on
+OJ. The serialization of a binary tree follows a level order
+traversal, where '#' signifies a path terminator where no node exists
+below. Here's an example:1    / \   2   3      /     4      \
+5The above binary tree is serialized as"{1,2,3,#,#,4,#,#,5}".
+
+Tags: Tree, Depth-first Search
+'''
+
 # Definition for a  binary tree node
 # class TreeNode:
 #     def __init__(self, x):

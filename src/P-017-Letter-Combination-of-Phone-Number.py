@@ -1,12 +1,22 @@
+'''
+P-017 - Letter Combinations of a Phone Number
+
+Given a digit string, return all possible letter combinations that the
+number could represent. A mapping of digit to letters (just like on
+the telephone buttons) is given below. Note:Although the above answer
+is in lexicographical order, your answer could be in any order you
+want.
+
+Tags: Backtracking, String
+'''
+
 class Solution:
     # @return a list of strings, [s1, s2]
-    def __init__(self):
-        self.map = ['', '', 'abc', 'def', 'ghi', 'jkl', 'mno', 'pqrs', 'tuv', 'wxyz']
-        self.output = []
-
     def letterCombinations(self, digits, pos = 0, string = None):
         # Initialize
         if pos == 0:
+            self.map = ['', '', 'abc', 'def', 'ghi', 'jkl', 'mno', 'pqrs', 'tuv', 'wxyz']
+            self.output = []
             string = []
             digits = [int(c) for c in digits if c not in '01']
 
@@ -22,6 +32,13 @@ class Solution:
 
         return self.output
 
-s = Solution()
-for i in s.letterCombinations('234'):
-    print i
+# Testing
+from utils import *
+
+cases = [
+	Test_case(('123', ), 9),
+    Test_case(('234', ), 27),
+    Test_case(('1234567890', ), 11664),
+]
+
+run_cases(Solution().letterCombinations, cases, lambda x: len(x))

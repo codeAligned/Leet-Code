@@ -1,3 +1,13 @@
+'''
+P-143 - Reorder List
+
+Given a singly linked listL:L0L1Ln-1Ln,reorder it to:L0LnL1Ln-1L2Ln-2
+You must do this in-place without altering the nodes' values. For
+example,Given{1,2,3,4}, reorder it to{1,4,2,3}.
+
+Tags: Linked List
+'''
+
 # Definition for singly-linked list.
 class ListNode:
     def __init__(self, x):

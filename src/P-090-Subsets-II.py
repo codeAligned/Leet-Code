@@ -1,3 +1,14 @@
+'''
+P-090 - Subsets II
+
+Given a collection of integers that might contain duplicates,S, return
+all possible subsets. Note:Elements in a subset must be in non-
+descending order.The solution set must not contain duplicate subsets.
+For example,IfS=[1,2,2], a solution is:
+
+Tags: Array, Backtracking
+'''
+
 class Solution:
     # @param S, a list of integer
     # @return a list of lists of integer

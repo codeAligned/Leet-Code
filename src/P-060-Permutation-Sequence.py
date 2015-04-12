@@ -1,3 +1,15 @@
+'''
+P-060 - Permutation Sequence
+
+The set[1,2,3,&#8230;,n]contains a total ofn! unique permutations. By
+listing and labeling all of the permutations in order,We get the
+following sequence (ie, forn= 3):"123""132""213""231""312""321"
+Givennandk, return thekthpermutation sequence. Note:Givennwill be
+between 1 and 9 inclusive.
+
+Tags: Backtracking, Math
+'''
+
 class Solution:
 
     def getPermutation(self, n, k):

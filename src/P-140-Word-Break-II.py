@@ -1,3 +1,15 @@
+'''
+P-140 - Word Break II
+
+Given a stringsand a dictionary of wordsdict, add spaces insto
+construct a sentence where each word is a valid dictionary word.
+Return all such possible sentences. For example,
+givens="catsanddog",dict=["cat", "cats", "and", "sand", "dog"]. A
+solution is["cats and dog", "cat sand dog"].
+
+Tags: Dynamic Programming, Backtracking
+'''
+
 from collections import defaultdict
 
 class Solution:

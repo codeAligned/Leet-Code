@@ -1,3 +1,13 @@
+'''
+P-119 - Pascal&#39;s Triangle II
+
+Given an indexk, return thekthrow of the Pascal's triangle. For
+example, givenk= 3,Return[1,3,3,1]. Note:Could you optimize your
+algorithm to use onlyO(k) extra space?
+
+Tags: Array
+'''
+
 class Solution:
     # @return a list of integers
     def getRow(self, rowIndex):

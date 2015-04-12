@@ -1,3 +1,14 @@
+'''
+P-172 - Factorial Trailing Zeroes
+
+Given an integern, return the number of trailing zeroes inn!.
+Note:Your solution should be in logarithmic time complexity.
+Credits:Special thanks to@tsfor adding this problem and creating all
+test cases.
+
+Tags: Math
+'''
+
 class Solution:
     # @return an integer
     # All trailing zeros is from the factors 5 * 2

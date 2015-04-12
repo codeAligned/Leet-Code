@@ -1,3 +1,17 @@
+'''
+P-025 - Reverse Nodes in k-Group
+
+Given a linked list, reverse the nodes of a linked listkat a time and
+return its modified list. If the number of nodes is not a multiple
+ofkthen left-out nodes in the end should remain as it is. You may not
+alter the values in the nodes, only nodes itself may be changed. Only
+constant memory is allowed. For example,Given this linked
+list:1->2->3->4->5 Fork= 2, you should return:2->1->4->3->5 Fork= 3,
+you should return:3->2->1->4->5
+
+Tags: Linked List
+'''
+
 # Definition for singly-linked list.
 class ListNode:
     def __init__(self, x):

@@ -1,3 +1,18 @@
+'''
+P-039 - Combination Sum
+
+Given a set of candidate numbers (C) and a target number (T), find all
+unique combinations inCwhere the candidate numbers sums toT.
+Thesamerepeated number may be chosen fromCunlimited number of times.
+Note:All numbers (including target) will be positive integers.Elements
+in a combination (a1,a2,  ,ak) must be in non-descending order.
+(ie,a1a2  ak).The solution set must not contain duplicate
+combinations. For example, given candidate set2,3,6,7and target7,A
+solution set is:[7][2, 2, 3]
+
+Tags: Array, Backtracking
+'''
+
 class Solution:
     # @param candidates, a list of integers
     # @param target, integer

@@ -1,3 +1,15 @@
+'''
+P-015 - 3Sum
+
+Given an array S of n integers, are there elements a,b,c in S such that
+a + b + c = 0?
+Find all unique triplets in the array which gives the sum of zero.
+Note: Elements in a triplet (a,b,c) must be in non-descending order.
+The solution set must not contain duplicate triplets.
+
+Tags: Array, Two Pointers
+'''
+
 class Solution:
     # @return a list of lists of length 3, [[val1,val2,val3]]
     # O(n ^ 2) Solution
@@ -25,5 +37,14 @@ class Solution:
                         j -= 1
         return ret
 
-s = Solution()
-print s.threeSum([0,0,0])
+# Testing
+from utils import *
+
+cases = [
+	Test_case(([0, 0, 0], ), [[0, 0, 0], ]),
+    Test_case(([0, 0, 0, 1], ), [[0, 0, 0], ]),
+    Test_case(([0, 0, 0, 1], ), [[0, 0, 0], ]),
+    Test_case(([0, 0, 0, 1, -1], ), [[0, 0, 0], [-1, 0, 1]]),
+]
+
+run_cases(Solution().threeSum, cases)

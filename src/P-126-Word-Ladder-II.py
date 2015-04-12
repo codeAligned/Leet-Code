@@ -1,3 +1,16 @@
+'''
+P-126 - Word Ladder II
+
+Given two words (startandend), and a dictionary, find all shortest
+transformation sequence(s) fromstarttoend, such that: For example,
+Given:start="hit"end="cog"dict=["hot","dot","dog","lot","log"] Return[
+["hit","hot","dot","dog","cog"],      ["hit","hot","lot","log","cog"]
+] Note:All words have the same length.All words contain only lowercase
+alphabetic characters.
+
+Tags: Array, Backtracking, Breadth-first Search, String
+'''
+
 from collections import defaultdict
 
 class Solution:

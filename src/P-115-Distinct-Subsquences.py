@@ -1,3 +1,16 @@
+'''
+P-115 - Distinct Subsequences
+
+Given a stringSand a stringT, count the number of distinct
+subsequences ofTinS. A subsequence of a string is a new string which
+is formed from the original string by deleting some (can be none) of
+the characters without disturbing the relative positions of the
+remaining characters. (ie,"ACE"is a subsequence of"ABCDE"while"AEC"is
+not). Here is an example:S="rabbbit",T="rabbit" Return3.
+
+Tags: Dynamic Programming, String
+'''
+
 class Solution:
     # @return an integer
     # d[i][j] means the # of subseq if T[j] in S[i]

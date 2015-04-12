@@ -1,43 +1,41 @@
+'''
+P-009 - Palindrome Number
+
+Determine whether an integer is a palindrome. Do this without extra
+space. click to show spoilers. Could negative integers be palindromes?
+(ie, -1) If you are thinking of converting the integer to string, note
+the restriction of using extra space. You could also try reversing an
+integer. However, if you have solved the problem "Reverse Integer",
+you know that the reversed integer might overflow. How would you
+handle such case? There is a more generic way of solving this problem.
+
+Tags: Math
+'''
+
 class Solution:
     # @return a boolean
-    def num_digits(self, x):
-        i = 0
-        while x > 0:
-            x = x / 10
-            i += 1
-        return i
-
-    def kth_digit(self, x, k):
-        return (x % 10 ** (k + 1)) / 10 ** k
-
-    def isPalindrome(self, x):
-        if x < 0:
-            return False
-        i = self.num_digits(x)
-        flag = True
-        if i == 1:
-            return True
-        for k in range(0, i / 2):
-            if self.kth_digit(x, k) == self.kth_digit(x, i - k - 1):
-                continue
-            else:
-                flag = False
-                break
-        return flag
-
     def isPalindrome(self, x):
         if x % 10 == 0 and x != 0 or x < 0:
             return False
         i = 0
         while i < x:
+            # digit from the beginning
             i = i * 10 + x % 10
+            # digit from the end
             x = x / 10
         return i == x or i / 10 == x
 
-s = Solution()
+# Testing
+from utils import *
 
-print s.isPalindrome(123321)
-print s.isPalindrome(12321)
-print s.isPalindrome(-123321)
-print s.isPalindrome(-12321)
-print s.isPalindrome(-123521)
+cases = [
+	Test_case((123, ), False),
+    Test_case((-123, ), False),
+    Test_case((-121, ), False),
+    Test_case((12321, ), True),
+    Test_case((1221, ), True),
+    Test_case((121, ), True),
+    Test_case((1, ), True),
+]
+
+run_cases(Solution().isPalindrome, cases)

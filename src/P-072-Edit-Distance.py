@@ -1,3 +1,14 @@
+'''
+P-072 - Edit Distance
+
+Given two wordsword1andword2, find the minimum number of steps
+required to convertword1toword2. (each operation is counted as 1
+step.) You have the following 3 operations permitted on a word: a)
+Insert a characterb) Delete a characterc) Replace a character
+
+Tags: Dynamic Programming, String
+'''
+
 class Solution:
     # @return an integer
 

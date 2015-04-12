@@ -1,3 +1,14 @@
+'''
+P-092 - Reverse Linked List II
+
+Reverse a linked list from positionmton. Do it in-place and in one-
+pass. For example:Given1->2->3->4->5->NULL,m= 2 andn= 4,
+return1->4->3->2->5->NULL. Note:Givenm,nsatisfy the following
+condition:1 mn length of list.
+
+Tags: Linked List
+'''
+
 # Definition for singly-linked list.
 class ListNode:
     def __init__(self, x):

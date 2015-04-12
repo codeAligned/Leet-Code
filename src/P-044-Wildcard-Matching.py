@@ -1,3 +1,11 @@
+'''
+P-044 - Wildcard Matching
+
+Implement wildcard pattern matching with support for'?'and'*'.
+
+Tags: Dynamic Programming, Backtracking, Greedy, String
+'''
+
 class Solution:
     # @param s, an input string
     # @param p, a pattern string

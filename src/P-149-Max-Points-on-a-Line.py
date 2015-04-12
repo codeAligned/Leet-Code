@@ -1,3 +1,12 @@
+'''
+P-149 - Max Points on a Line
+
+Givennpoints on a 2D plane, find the maximum number of points that lie
+on the same straight line.
+
+Tags: Hash Table, Math
+'''
+
 # Definition for a point
 class Point:
     def __init__(self, a=0, b=0):

@@ -1,3 +1,14 @@
+'''
+P-088 - Merge Sorted Array
+
+Given two sorted integer arrays A and B, merge B into A as one sorted
+array. Note:You may assume that A has enough space (size that is
+greater or equal tom+n) to hold additional elements from B. The number
+of elements initialized in A and B aremandnrespectively.
+
+Tags: Array, Two Pointers
+'''
+
 class Solution:
     # @param A  a list of integers
     # @param m  an integer, length of A

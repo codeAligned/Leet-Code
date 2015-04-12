@@ -1,3 +1,17 @@
+'''
+P-134 - Gas Station
+
+There areNgas stations along a circular route, where the amount of gas
+at stationiisgas[i]. You have a car with an unlimited gas tank and it
+costscost[i]of gas to travel from stationito its next station (i+1).
+You begin the journey with an empty tank at one of the gas stations.
+Return the starting gas station's index if you can travel around the
+circuit once, otherwise return -1. Note:The solution is guaranteed to
+be unique.
+
+Tags: Greedy
+'''
+
 class Solution:
     # @param gas, a list of integers
     # @param cost, a list of integers

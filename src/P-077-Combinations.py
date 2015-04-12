@@ -1,3 +1,12 @@
+'''
+P-077 - Combinations
+
+Given two integersnandk, return all possible combinations ofknumbers
+out of 1 ...n. For example,Ifn= 4 andk= 2, a solution is:
+
+Tags: Backtracking
+'''
+
 class Solution:
     # @return a list of lists of integers
 
