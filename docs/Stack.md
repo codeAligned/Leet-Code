@@ -1,0 +1,13 @@
+# Stack
+- 020 [Valid Parentheses](../src/P-020-Valid-Parentheses.py)
+- 042 [Trapping Rain Water](../src/P-042-Trapping-Rain-Water .py)
+- 071 [Simplify Path](../src/P-071-Simplify-Path.py)
+- 084 [Largest Rectangle in Histogram](../src/P-084-Largest-Rectangle-in-Histogram.py)
+- 085 [Maximal Rectangle](../src/P-085-Maximal-Rectangle.py)
+- 094 [Binary Tree Inorder Traversal](../src/P-094-Binary-Tree-Inorder-Traversal.py)
+- 103 [Binary Tree Zigzag Level Order Traversal](../src/P-103-Binary-Tree-ZigZag-Level-Order-Traversal.py)
+- 144 [Binary Tree Preorder Traversal](../src/P-144-Binary-Tree-Preorder-Traversal.py)
+- 145 [Binary Tree Postorder Traversal](../src/P-145-Binary-Tree-Postorder-Traversal.py)
+- 150 [Evaluate Reverse Polish Notation](../src/P-150-Evaluate-Reverse-Polish-Notation.py)
+- 155 [Min Stack](../src/P-155-MinStack.py)
+- 173 [Binary Search Tree Iterator](../src/P-173-Binary-Search-Tree-Iterator.py)
