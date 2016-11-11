@@ -41,7 +41,7 @@ for pid, title, url in problems:
 
         # Problem tags
         tags = ''.join(str(tag.text) + ', ' for tag in \
-            t.find('span', attrs = {'class': 'hide'}).findAll('a')).strip(', ')
+            t.find('span', attrs = {'class': 'hidebutton'}).findAll('a')).strip(', ')
 
         # Format strings
         string = '\'\'\'\nP-%s - %s\n\n%s\n\nTags: %s\n\'\'\'\n' % (pid, title, des, tags)
